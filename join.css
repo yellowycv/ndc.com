@@ -1,0 +1,101 @@
+/* Basic styling for the body and overall content */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color for the page */
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/* Style the form container */
+.form-container {
+    padding: 20px; /* Padding inside the form container */
+    margin: 50px auto; /* Center the form with margin */
+    width: 80%; /* Set form width to 80% of the viewport */
+    max-width: 800px; /* Maximum width of the form */
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+    position: relative; /* Required for the animation */
+    transform: translateX(-100vw); /* Start form off-screen (left) */
+    opacity: 0; /* Start with the form invisible */
+    transition: transform 1s ease-out, opacity 1s ease-out; /* Smooth animation for form entry */
+}
+
+/* Style the main heading inside the form */
+.join-h1 {
+    text-align: center; /* Center the heading text */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark grey color for the text */
+}
+
+/* Adjust layout to have 2 or 3 inputs in the same line */
+.join-inputform {
+    display: flex; /* Flexbox layout for inputs */
+    flex-wrap: wrap; /* Allow inputs to wrap onto the next line if needed */
+    gap: 10px; /* Space between inputs */
+    margin-bottom: 20px; /* Space below each input group */
+}
+
+/* Style for all input fields and dropdowns */
+.join-inputform input,
+.join-inputform select {
+    padding: 10px; /* Padding inside the inputs */
+    border: 1px solid #ccc; /* Light grey border around inputs */
+    border-radius: 4px; /* Slightly rounded corners for inputs */
+    flex: 1; /* Allow inputs to grow/shrink equally within the container */
+}
+
+/* Set width for inputs taking up one-third of the row */
+.join-inputform .third-width {
+    width: calc(33.33% - 10px); /* Each input takes up 33.33% of the row minus the gap */
+}
+
+/* Set width for inputs taking up half of the row */
+.join-inputform .half-width {
+    width: calc(50% - 10px); /* Each input takes up 50% of the row minus the gap */
+}
+
+/* Set width for inputs taking up the full row */
+.join-inputform .full-width {
+    width: calc(100% - 10px); /* Each input takes up the full width minus the gap */
+}
+
+/* Style for the submit and button form container */
+.join-submit-fomr {
+    display: flex; /* Flexbox layout for buttons */
+    gap: 10px; /* Space between buttons */
+    justify-content: space-between; /* Evenly distribute buttons across the width */
+}
+
+/* Style for submit and navigation buttons */
+.join-submit-fomr button[type="submit-form"],
+.join-submit-fomr button[type="button-form"] {
+    flex: 1; /* Allow buttons to grow/shrink equally */
+    padding: 10px; /* Padding inside the buttons */
+    background-color: #002D62; /* Blue background for buttons */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for buttons */
+.join-submit-fomr button[type="submit-form"]:hover,
+.join-submit-fomr button[type="button-form"]:hover {
+    background-color: #002D62; /* Darker blue background on hover */
+}
+
+/* Style for links inside buttons */
+.join-submit-fomr a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Animation triggered when form comes into view */
+.form-container.in-view {
+    transform: translateX(0); /* Move form to its final position (center) */
+    opacity: 1; /* Make the form fully visible */
+}

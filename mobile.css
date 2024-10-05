@@ -1,0 +1,79 @@
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .topnav .icon {
+        display: block; /* Show menu icon on mobile */
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .marquee-container {
+        font-size: 1.2em; /* Adjust font size for mobile */
+        text-align: center;
+    }
+
+    .first-article-container, 
+    .second-articles-container {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .animation-pics {
+        flex: 1 1 100%; /* Stack images in one column */
+        margin: 5px 0;
+    }
+
+    .footer-container-cover {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right1, .inner-div-left, .inner-div-center, .inner-div-right {
+        width: 100%;
+        text-align: center; /* Center footer links on mobile */
+    }
+
+    .address-div {
+        margin-bottom: 15px;
+    }
+
+    .all-right-reserved-container {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .marquee-container {
+        font-size: 1em; /* Further adjust font size for smaller screens */
+    }
+
+    .topnav a {
+        font-size: 0.9em; /* Decrease link font size */
+    }
+
+    .first-article-container .article-body h1,
+    .second-articles-container .second-article h1 {
+        font-size: 1.2em; /* Decrease article heading font size */
+    }
+}
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .first-article-container, 
+    .second-articles-container {
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    .article-body, 
+    .second-article {
+        font-size: 0.9em; /* Slightly reduce font size for mobile */
+    }
+}

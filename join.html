@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="join.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="join-h1">FILL BELOW FORM TO BECOME A MEMBER</h1> 
+        <form action="">
+            <div class="join-inputform">
+                <input type="text" class="third-width" placeholder="First Name" required> 
+                <input type="text" class="third-width" placeholder="Last Name" required>
+                <input type="text" class="third-width" placeholder="Other Name">
+            </div>
+            <div class="join-inputform">
+                <select class="third-width" id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <input type="date" class="third-width" id="dob" placeholder="Enter your DOB" required>
+                <input type="email" class="third-width" placeholder="Email" required>
+            </div>
+            <div class="join-inputform">
+                <input type="tel" class="third-width" placeholder="Phone Number" required>
+                <input type="text" class="third-width" placeholder="LGA" required>
+                <input type="text" class="third-width" placeholder="City/Village" required>
+            </div>
+            <div class="join-inputform">
+                <input type="text" class="full-width" placeholder="What brought you to our Assembly?" required>
+                <input type="text" class="full-width" placeholder="How did you hear about us?" required>
+                <input type="text" class="full-width" placeholder="How can you help to Restore Nasarawa?" required>
+            </div>
+            <div class="join-inputform">
+                <select class="full-width" id="dropdown" required>
+                    <option value="">Which committee are you interested in?</option>
+                    <option value="health">Health & Wellness</option>
+                    <option value="project">Project Management</option>
+                    <option value="familyservice">Family Service</option>
+                    <option value="needassessment">Need Assessment</option>
+                    <option value="education">Education Management</option>
+                    <option value="environment">Environment</option>
+                    <option value="security">Security</option>
+                    <option value="lifeessentials">Life Essentials</option>
+                    <option value="publicwork">Public Work</option>
+                </select>
+            </div>
+            <div class="join-inputform">
+                <input type="password" class="half-width" placeholder="Password" required>
+                <input type="password" class="half-width" placeholder="Confirm Password" required>
+            </div>
+            <div class="join-submit-fomr">
+                <button type="submit-form">Submit</button>
+                <button type="button-form"><a href="login.html">Login</a></button>
+                <button type="button-form"><a href="index.html">Home</a></button>
+            </div>
+        </form>
+    </div>
+    <script src="join.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
